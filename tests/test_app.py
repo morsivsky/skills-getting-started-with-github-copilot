@@ -19,7 +19,7 @@ def safe_unregister(activity: str, email: str):
 
 
 def test_signup_and_unregister_flow():
-    activity = "Chess Club"
+    activity = "Swimming"
     email = "test_user@example.com"
 
     # ensure clean state
@@ -45,7 +45,7 @@ def test_signup_and_unregister_flow():
 
 
 def test_duplicate_signup_returns_400():
-    activity = "Programming Class"
+    activity = "Track and Field"
     email = "dup_user@example.com"
 
     # ensure clean state
@@ -65,7 +65,7 @@ def test_duplicate_signup_returns_400():
 
 
 def test_unregister_nonexistent_returns_404():
-    activity = "Tennis Club"
+    activity = "Fencing"
     email = "noone@example.com"
 
     # ensure not present
